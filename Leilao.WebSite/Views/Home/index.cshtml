@@ -2,36 +2,52 @@
     ViewBag.Title = "Home do Sitema";
 }
 
-<div class="card-deck">
+<div class="card-deck col-7 mx-auto">
     <div class="card">
+        <p></p>
         <img src="~/images/reddead.jpg" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Red Dead - <text id="title_item_1"></text></h5>
+            <h6 class="card-title text-center">Red Dead</h6>
             <p class="text-center"><button type="button" class="btn btn-primary" onclick="Teste(1)">Lance</button></p>
         </div>
-        <div class="card-footer">
-            <small class="text-muted" id="desc_item_1">Ultimo lance : </small>
+        <div class="card-footer  text-center">
+            <small class="text-muted" id="desc_item_1"></small>
+            @*<small id="title_item_1"></small>*@
         </div>
     </div>
-    <div class="card w-50">
+    <div class="card">
+        <p></p>
         <img src="~/images/callofduty.png" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Call Of Duty - <text id="title_item_2"></text></h5>
+            <h6 class="card-title text-center">Call Of Duty</h6>
             <p class="text-center"><button type="button" class="btn btn-primary" onclick="Teste(2)">Lance</button></p>
         </div>
-        <div class="card-footer">
-            <small class="text-muted" id="desc_item_2">Ultimo lance : </small>
+        <div class="card-footer text-center">
+            <small class="text-muted" id="desc_item_2"></small>
+            @*<small id="title_item_2"></small>*@
         </div>
     </div>
-    <div class="card w-50">
+    <div class="card">
+        <p></p>
         <img src="~/images/residentevil.jpg" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Resident Evil - <text id="title_item_3"></text></h5>
+            <h6 class="card-title text-center">Resident Evil</h6>
             <p class="text-center"><button type="button" class="btn btn-primary" onclick="Teste(3)">Lance</button></p>
         </div>
-        <div class="card-footer">
-            <small class="text-muted" id="desc_item_3">Ultimo lance : </small>
+        <div class="card-footer text-center">
+            <small class="text-muted" id="desc_item_3"></small>
+            @*<small id="title_item_3"></small>*@
         </div>
+    </div>
+</div>
+
+<div class="card text-white bg-primary col-12 mt-2">
+    <div class="card-header">Painel de Lances</div>
+    <div class="card-body">
+        <h5 class="card-title">Ultimos Lances Dados</h5>
+        <ul id="ultimos_lances">
+
+        </ul>
     </div>
 </div>
 
